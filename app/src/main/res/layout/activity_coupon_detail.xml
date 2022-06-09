@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/super_light_grey"
+    android:id="@+id/layout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/ic_bottom_corner_background"/>
+
+        <include layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/two_x"
+            android:id="@+id/image_card"
+            app:cardCornerRadius="@dimen/one_x"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/one_x"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image_coupon_detail_min"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/ic_image_na"
+                    android:id="@+id/coupon_image"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/one_x"
+                    android:layout_marginTop="@dimen/one_x"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/h3"
+                    android:id="@+id/coupon_text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/coupon_qty"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/h4"
+                    android:layout_marginHorizontal="@dimen/one_x"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="@dimen/one_x"
+                    android:layout_marginTop="@dimen/one_x"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="@dimen/image_icon_size_small"
+                        android:layout_height="@dimen/image_icon_size_small"
+                        android:src="@drawable/ic_price_tag_green"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/coupon_amount"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textAllCaps="true"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="@dimen/one_x"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/two_x"
+            android:layout_marginVertical="@dimen/one_x"
+            android:id="@+id/expired_card"
+            app:cardCornerRadius="@dimen/one_x"
+            app:layout_constraintTop_toBottomOf="@id/image_card">
+
+            <TextView
+                android:id="@+id/coupon_expired"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/one_x"
+                android:gravity="center"
+                android:textColor="@color/text"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/two_x"
+            android:layout_marginVertical="@dimen/one_x"
+            android:id="@+id/detail_card"
+            app:cardCornerRadius="@dimen/one_x"
+            app:layout_constraintBottom_toTopOf="@id/submit"
+            app:layout_constraintTop_toBottomOf="@id/expired_card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tabbar"
+                    app:tabTextColor="@color/text_2"
+                    app:tabSelectedTextColor="@color/colorPrimary"
+                    app:tabTextAppearance="@style/coupon_detail_tabwidget"/>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/two_x"
+                    android:id="@+id/view_pager"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/submit"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/buy_coupon"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

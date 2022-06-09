@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background">
+        <include layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/rounded_onboard"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/has_data_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/two_x"
+                    android:layout_marginHorizontal="@dimen/two_x"
+                    android:text="@string/cashier_manage_sell_price_choose_product"/>
+                <ExpandableListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/list"
+                    android:layoutDirection="rtl"
+                    android:layout_marginTop="@dimen/two_x"/>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/empty_data_layout"
+                layout="@layout/agency_commition_history_empty_layout"
+                android:background="@drawable/rounded_onboard"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_marginHorizontal="@dimen/two_x"
+                android:layout_marginVertical="@dimen/one_x"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

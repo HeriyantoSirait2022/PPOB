@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/two_x">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_bank_transfer_confirmation_title"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="@dimen/one_x"
+        android:background="@color/disabled"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/pay_bank_transfer_confirmation_detail"
+        android:textSize="14dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/two_x">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel_label"
+            android:layout_marginRight="@dimen/one_x"
+            android:id="@+id/cancel"
+            style="@style/Widget.MaterialComponents.Button.TextButton" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ok_label"
+            android:layout_weight="1"
+            android:id="@+id/ok"
+            android:layout_marginRight="@dimen/one_x"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/two_x">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list"
+                android:layout_marginHorizontal="@dimen/two_x"
+                android:layout_marginTop="@dimen/two_x"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/one_x"
+                android:layout_marginBottom="5dp"
+                android:background="@color/disabled"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one_x"
+                android:layout_marginBottom="@dimen/two_x"
+                android:layout_marginHorizontal="@dimen/two_x">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/h3"
+                    android:textStyle="bold"
+                    android:text="@string/order_deposit_mutation_final"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h3"
+                    android:id="@+id/final_deposit"/>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetBottom="0dp"
+                app:icon="@drawable/ic_icon_filemdpi"
+                app:iconGravity="textStart"
+                app:iconPadding="@dimen/two_x"
+                app:strokeColor="@color/colorPrimary"
+                android:text="@string/order_deposit_mutation_print"
+                android:id="@+id/print"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

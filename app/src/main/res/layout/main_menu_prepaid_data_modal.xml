@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_onboard">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="46dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="@dimen/two_x"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:cardCornerRadius="@dimen/two_x"
+        android:layout_marginRight="@dimen/two_x"
+        android:layout_marginLeft="@dimen/one_x">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/disabled"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/two_x"
+        android:layout_marginHorizontal="@dimen/two_x"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/image"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/two_x">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title_size"
+                android:textStyle="bold"
+                android:id="@+id/title"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/two_x"
+        android:layout_marginHorizontal="@dimen/two_x"
+        android:id="@+id/total_price"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/disabled"
+        android:layout_marginHorizontal="@dimen/two_x"
+        android:layout_marginVertical="@dimen/two_x"/>
+
+    <TextView
+        android:id="@+id/termsOfUse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/two_x"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:textColorLink="@color/purple"
+        android:text="@string/main_menu_prepaid_data_modal_notice"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buy_now"
+        android:layout_margin="@dimen/two_x"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/buy_now_label"/>
+</LinearLayout>

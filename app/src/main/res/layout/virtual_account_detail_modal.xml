@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/title_size"
+        android:layout_marginHorizontal="@dimen/two_x"
+        android:layout_marginTop="@dimen/two_x"
+        android:layout_marginBottom="@dimen/one_x"
+        android:text="@string/order_detail_transaction_payment_detail"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/two_x"
+        android:layout_marginVertical="@dimen/one_x"
+        android:background="@color/disabled"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_money_green"
+        android:layout_marginHorizontal="@dimen/two_x"
+        android:layout_marginBottom="@dimen/two_x"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/content_layout"
+        android:layout_marginHorizontal="@dimen/two_x"
+        android:layout_marginBottom="@dimen/two_x"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/two_x"
+        android:paddingVertical="@dimen/one_x"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/pay_total_payment_title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/total"/>
+    </LinearLayout>
+</LinearLayout>

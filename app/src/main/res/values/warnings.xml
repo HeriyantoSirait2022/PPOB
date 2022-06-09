@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Failed String -->
+    <string name="f_idcard_empty">Nomor KTP kosong, masukan nomor KTP</string>
+    <string name="f_idcardphoto_empty">Foto KTP kosong, foto KTP lagi</string>
+    <string name="f_selfie_empty">Foto selfie kosong, foto lagi</string>
+    <string name="f_signature_empty">Foto tanda tangan kosong, foto lagi</string>
+    <string name="f_filename_format">Foto harus dalam format JPEG/JPG atau PNG</string>
+    <string name="f_nominallimit_min">Minimum nominal adalah 1.000</string>
+    <string name="f_nominallimit_max">Nominal yang diperbolehkan lebih kecil sama dengan 10 Juta</string>
+    <string name="f_nominallimit_empty">Nominal anda kosong, silahkan isi dahulu</string>
+    <string name="f_login_problem">Cache aplikasi bermasalah, install ulang aplikasi</string>
+    <string name="f_transaction_failed">Transaksi dibatalkan, silahkan buat transaksi baru</string>
+    <string name="f_no_coupon">Maaf, tidak ada kupon tersedia untuk produk ini</string>
+    <string name="f_payment_accepted">Pembayaran belum diterima</string>
+
+    <!-- Warning String -->
+    <string name="w_otp_digit">Kode OTP membutuhkan 6 digit</string>
+    <string name="w_idcard_digit">Nomor KTP membutuhkan 16 digit</string>
+    <string name="w_image_notexists">Gambar tidak ditemukan pada perangkat, ambil gambar lagi</string>
+
+    <!-- Success String -->
+    <string name="s_premium_upgrade">Selamat, anda adalah agen premium!</string>
+    <string name="s_password_change">Selamat, password anda terubah!</string>
+    <string name="s_shopname_change">Selamat, nama toko anda telah berubah!</string>
+    <string name="s_email_change">Selamat, email anda telah berubah!</string>
+    <string name="s_pin_change">Selamat, PIN anda telah diubah!</string>
+    <string name="s_nominalprocess_ok">Nominal telah diatur</string>
+    <string name="s_payment_accepted">Pembayaran telah diterima</string>
+
+    <!-- Info String -->
+    <string name="i_verification_waiting">Akun sedang diverifikasi. Mohon tunggu 3x24 jam.</string>
+    <string name="i_coupon_canceled">Metode pembayaran berubah, kupon dibatalkan</string>
+</resources>

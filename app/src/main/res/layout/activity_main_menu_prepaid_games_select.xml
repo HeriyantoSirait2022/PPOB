@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:id="@+id/layout"
+    android:background="@drawable/ic_background"
+    tools:context=".main_menu.prepaid_data.PrepaidDataInputPhoneNoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/rounded_onboard"
+            app:layout_constraintTop_toTopOf="@id/content"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <include layout="@layout/toolbar_layout"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            android:id="@+id/content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="@dimen/image_icon_background_medium"
+                    android:layout_height="@dimen/image_icon_background_medium"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:background="@drawable/rounded_white">
+                    <ImageView
+                        android:layout_width="@dimen/image_product_min"
+                        android:layout_height="@dimen/image_product_min"
+                        android:layout_margin="8dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:src="@drawable/ic_icon_permainan"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_menu_prepaid_games_title"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="@dimen/two_x"
+                android:layout_marginTop="@dimen/two_x"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/two_x"
+                android:layout_marginHorizontal="@dimen/two_x">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/one_x"
+                    android:paddingVertical="@dimen/one_x">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:background="#fff"
+                        android:id="@+id/game_names"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:hint="@string/main_menu_prepaid_games_placeholder"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView> 
+
+            <include
+                android:id="@+id/has_data_layout"
+                layout="@layout/main_menu_prepaid_data_choose_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one_x"
+                android:layout_marginBottom="@dimen/list_item_margin_bottom_50dp"
+                android:visibility="visible"/>
+
+            <include
+                android:id="@+id/empty_data_layout"
+                layout="@layout/agency_commition_history_empty_layout"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_marginHorizontal="@dimen/two_x"
+                android:layout_marginVertical="@dimen/one_x"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

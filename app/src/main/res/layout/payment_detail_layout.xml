@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/dialog_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_bottom_menu_selected"
+        android:paddingVertical="4dp"
+        android:gravity="center">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/one_x"
+            app:srcCompat="@drawable/ic_keyboard_arrow_down_white_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="@string/choose_payment_swipe_hide_detail_title"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/two_x">
+        <!-- <code> -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/image_icon_size_medium"
+            android:layout_height="@dimen/image_icon_size_medium"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_money_green"
+            android:id="@+id/image"
+            android:layout_marginBottom="@dimen/two_x"/>
+        <!-- </code> -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/two_x"
+            android:id="@+id/content_layout"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/one_x"
+                android:id="@+id/coupon"
+                android:textSize="@dimen/six_x"
+                android:textColor="@color/colorPrimary"
+                app:strokeColor="@color/colorPrimary"
+                app:icon="@drawable/ic_coupon_primary"
+                app:iconTint="@color/colorPrimary"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="@string/use_coupon_label"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/one_x"
+                android:id="@+id/pay_now"
+                android:textSize="@dimen/six_x"
+                android:backgroundTint="@color/colorPrimary"
+                app:icon="@drawable/ic_money_white"
+                android:text="@string/buy_now_label"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/two_x"
+    android:gravity="center"
+    android:layoutDirection="ltr"
+    android:background="?attr/selectableItemBackground">
+    <!-- <code> -->
+    <ImageView
+        android:layout_width="65dp"
+        android:scaleType="fitCenter"
+        android:layout_height="65dp"
+        android:src="@drawable/ic_telkomhdpi"
+        android:id="@+id/image"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Telkom"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="@dimen/one_x"
+        android:textSize="@dimen/title_size"
+        android:id="@+id/text"/>
+    <!-- </code> -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/arrow_right"
+        android:src="@drawable/ic_keyboard_arrow_right_black_24"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trouble"
+        android:textColor="@color/danger"
+        android:text="@string/trouble_label"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:layout_marginHorizontal="@dimen/two_x"
+    android:layout_marginVertical="@dimen/one_x"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/seven_x"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/two_x"
+            android:text="TOKEN PLNPRA 10.000"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/one_x"
+            android:id="@+id/name"/>
+        <TextView
+            android:text="Proses 1 - 10 Menit"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/two_x"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:text="@string/price_dash_label"/>
+        <TextView
+            android:text="Rp. 11.0000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:id="@+id/price"/>
+    </LinearLayout>
+</LinearLayout>

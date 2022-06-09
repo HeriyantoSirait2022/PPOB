@@ -1,0 +1,798 @@
+<resources>
+    <string name="app_name">RajaPay</string>
+    <string name="default_notification_channel_id">Transaction Status</string>
+    <string name="msg_token_fmt" formatted="true">Notifikasi : %s</string>
+
+    <string name="next_label">Lanjut</string>
+    <string name="forgot_password_label">Lupa Password</string>
+    <string name="previous_label">Sebelumnya</string>
+    <string name="skip_label">Lewati</string>
+    <string name="balance_label">Saldo</string>
+    <string name="scan_label">Scan</string>
+    <string name="top_up_1_label">Top Up</string>
+    <string name="transfer_label">Transfer</string>
+    <string name="please_wait_label">Mohon Tunggu</string>
+    <string name="buy_coupon">Beli Kupon</string>
+    <string name="use_coupon">Gunakan Kupon</string>
+    <string name="my_coupon">Kupon Saya</string>
+    <string name="coupon_available">Kupon Tersedia</string>
+    <string name="monthly_target_label">Target Bulan Ini</string>
+    <string name="monthly_target_left"> Transaksi Lagi ></string>
+    <string name="prepaid_label">Prabayar</string>
+    <string name="postpaid_label">Pascabayar</string>
+    <string name="signup_label">Daftar</string>
+    <string name="cancel_label">Batal</string>
+    <string name="ok_label">OK</string>
+    <string name="trouble_label">*Gangguan</string>
+    <string name="yes_label">Ya</string>
+    <string name="no_label">Tidak</string>
+    <string name="today_label">Hari ini</string>
+    <string name="name_label">Nama</string>
+    <string name="power_label">Tarif / Daya</string>
+    <string name="signin_label">Masuk</string>
+    <string name="copy_label">Salin</string>
+    <string name="take_image_label">Ambil Gambar</string>
+    <string name="news_label">Berita</string>
+    <string name="info_label">Info:</string>
+    <string name="titik_dua">:</string>
+    <string name="ticket_label">Tiket</string>
+    <string name="deposit_label">Rajapay Deposit</string>
+    <string name="va_label">Virtual Account</string>
+    <string name="bank_transfer_label">Bank Transfer</string>
+    <string name="qris_label">QRIS</string>
+    <string name="alfamart_label">Gerai Retail</string>
+    <string name="total_price_label">Total Harga</string>
+    <string name="price_label">Harga</string>
+    <string name="price_dash_label">Harga :</string>
+    <string name="bill_detail_label">Rinci Tagihan</string>
+    <string name="use_label">Gunakan</string>
+    <string name="admin_cost_label">Biaya Admin</string>
+    <string name="fine_label">Denda</string>
+    <string name="other_bill_label">Tagihan Lain</string>
+    <string name="top_up_label">Top Up Saldo</string>
+    <string name="back_to_home_label">Kembali ke beranda</string>
+    <string name="change_now_label">Ubah Sekarang</string>
+    <string name="phone_no_label">Nomor Handphone</string>
+    <string name="send_now_label">Kirim</string>
+    <string name="back_label">Kembali</string>
+    <string name="share_label">Bagikan</string>
+    <string name="done_label">Selesai</string>
+    <string name="save_label">Simpan</string>
+    <string name="find_order_label">Cari Pesanan</string>
+    <string name="find_pdam_label">Cari Area PDAM</string>
+    <string name="example_label">Contoh</string>
+    <string name="check_bill_label">Cek Tagihan</string>
+    <string name="understood_label">Mengerti</string>
+    <string name="transaction_label">Transaksi</string>
+    <string name="deposit_mutation_label">Mutasi Deposit</string>
+    <string name="term_condition_label">Syarat dan Ketentuan</string>
+    <string name="use_coupon_label">PAKAI KUPON</string>
+    <string name="buy_now_label">BAYAR SEKARANG</string>
+    <string name="start_transaction_label">Mulai Transaksi Sekarang</string>
+    <string name="copied_clipboard_label">Tersalin ke sistem</string>
+    <string name="do_not_have_account_label">Belum punya akun?</string>
+    <string name="have_account_label">Sudah punya akun?</string>
+    <string name="contact_us_label">Hubungi\nKami</string>
+    <string name="delete_all_label">Hapus Semua</string>
+    <string name="valid_until_label">Berlaku hingga</string>
+    <string name="edit_name_enter_password">Masukan Password Anda</string>
+    <string name="television_label">Televisi</string>
+    <string name="change_image_label">Ganti Gambar</string>
+
+    <string name="no_data_available">Tidak ada data tersedia</string>
+    <string name="no_title_available">Tidak ada judul tersedia</string>
+    <string name="no_time_available">Tidak ada keterangan waktu tersedia</string>
+    <string name="no_data_default">-</string>
+
+    <string name="gmail_label">Gmail</string>
+    <string name="bluetooth_label">Bluetooth</string>
+    <string name="note_label">Note</string>
+    <string name="maps_label">Maps</string>
+    <string name="facebook_label">Facebook</string>
+    <string name="drive_label">Google Drive</string>
+
+    <string name="inactive_click_label">Layanan ini sedang tidak aktif</string>
+    <string name="data_not_found">Data not found</string>
+    <string name="refid_not_found">Ref ID tidak ditemukan</string>
+    <string name="trouble_click_label">Layanan ini mengalami gangguan</string>
+    <string name="provider_trouble_click_label">Provider ini mengalami gangguan</string>
+    <string name="coupon_min_transaction_prevent">Nilai transaksi anda belum memenuhi minimum transaksi untuk menggunakan kupon ini</string>
+
+    <string name="information_version_app">Aplikasi RAJAPAY Versi</string>
+
+    <string name="forget_password_modal_title">Lupa Password</string>
+    <string name="forget_password_modal_subtitle">Masukan No Telp</string>
+
+    <string name="main_menu_enter_amount_modal_title">Nominal Pembayaran</string>
+    <string name="main_menu_enter_amount_modal_subtitle">Masukan jumlah yang ingin dibayarkan</string>
+    <string name="main_menu_enter_amount_modal_empty_amount">Jumlah bayar kosong</string>
+    <string name="main_menu_enter_amount_modal_amount_below_min">Jumlah bayar lebih rendah dari minimum pembayaran</string>
+    <string name="main_menu_enter_amount_modal_amount_above_max">Jumlah bayar lebih tinggi dari maksimum pembayaran</string>
+
+    <string name="activity_title_top_up_deposit">Isi Deposit</string>
+    <string name="activity_title_transaction">Transaksi</string>
+    <string name="activity_title_detail_transaction">Detail Transaksi</string>
+    <string name="activity_title_coupon_code">Pakai Kupon</string>
+    <string name="activity_title_how_to_pay">Cara Bayar</string>
+    <string name="activity_title_inbox">Kotak Masuk</string>
+    <string name="activity_title_notif_detail">Detail Notifikasi</string>
+    <string name="activity_title_choose_trouble_transaction">Pilih Transaksi Bermasalah</string>
+    <string name="activity_title_trouble_transaction">Kendala Transaksi</string>
+    <string name="activity_title_confirmation">Konfirmasi</string>
+    <string name="activity_title_price_list">Daftar Harga</string>
+    <string name="activity_title_save_pdf">Simpan PDF</string>
+    <string name="activity_title_print">Cetak Bluetooth</string>
+    <string name="activity_title_confirmation_bill">Konfirmasi Tampilan Struk</string>
+    <string name="activity_title_report_detail">Detail Laporan</string>
+    <string name="activity_title_upgrade_detail">Detail Upgrade Akun</string>
+    <string name="activity_title_password_verification">Verifikasi Password</string>
+    <string name="activity_title_otp_change_email">OTP Ubah Email</string>
+    <string name="activity_title_new_password">Atur Password Baru</string>
+    <string name="activity_title_manage_account">Atur Akun</string>
+    <string name="activity_title_verify_new_pin">Verifikasi PIN Baru</string>
+    <string name="activity_title_verify_otp">Verifikasi OTP</string>
+    <string name="activity_title_basic_verify">Verifikasi Dasar</string>
+    <string name="activity_title_photo_and_id_card">NIK &amp; Foto KTP</string>
+    <string name="activity_title_selfie">Foto Selfie</string>
+    <string name="activity_title_signature">Foto Tanda Tangan + KTP</string>
+    <string name="activity_title_manage_nominal">Atur Nominal</string>
+    <string name="activity_title_news">Berita Tagih Dana</string>
+    <string name="activity_title_payment_pin">PIN Pembayaran</string>
+
+    <string name="phone_empty_label">No telpon kosong</string>
+    <string name="password_empty_label">Password kosong</string>
+    <string name="confirm_password_empty_label">Konfirmasi password kosong</string>
+    <string name="password_condition_not_met_label">Password tidak memenuhi syarat</string>
+    <string name="otp_empty_label">Kode OTP kosong</string>
+    <string name="otp_not_satisfied_label">Kode OTP kurang dari 6 karakter</string>
+    <string name="password_not_same_confirm_label">Password tidak sama dengan konfirmasi password</string>
+
+    <string name="onboard_1_title">Jual Pulsa Termurah Dan Bayar Tagihan Dengan Mudah</string>
+    <string name="onboard_2_title">Ajak Temanmu</string>
+    <string name="onboard_3_title">Tambah Untung tanpa Bingung</string>
+    <string name="onboard_1_subtitle">Isi ulang token listrik, Telepon rumah, Gas, Pdam, Pulsa, paket data dan lainnya hanya tinggal sekali sentuh!</string>
+    <string name="onboard_2_subtitle">Semakin banyak orang yang Anda bantu, maka semakin banyak pula Untung yang Anda dapatkan!</string>
+    <string name="onboard_3_subtitle">Dapatkan keuntungan tambahan dengan membagikan kode referral kepada rekan Anda!</string>
+
+    <string name="login_title">Masukan Nomor Handphone dan Password Anda</string>
+    <string name="login_subtitle">Masukan Nomor Handphone dan Password Anda untuk melanjutkan proses Masuk ke aplikasi</string>
+
+    <string name="coupon_label">Kupon</string>
+    <string name="otp_title">Masukan Kode OTP</string>
+    <string name="otp_subtitle_1">OTP Terkirim ke </string>
+    <string name="otp_subtitle_2">Cek OTP di aplikasi RajaPay pada perangkat utama anda, atau via SMS ke nomor tujuan.</string>
+    <string name="otp_subtitle_3">OTP Terkirim ke No 0812312312 </string>
+    <string name="otp_resend">KIRIM ULANG OTP </string>
+    <string name="otp_notif_resend">OTP telah terkirim</string>
+
+    <string name="signup_enter_phone_title">Daftarkan Nomor Telepon Anda</string>
+    <string name="signup_enter_phone_subtitle">Masukan Nomor Telepon anda untuk Melanjutkan Proses Registrasi</string>
+    <string name="signup_enter_phone_maximum_length_exceed">Nomor Telepon Anda melebihi 25 karakter</string>
+
+    <string name="signup_enter_name_title">Masukan Nama Toko Anda</string>
+    <string name="signup_enter_name_subtitle">Masukan Nama Toko Anda untuk Melanjutkan Proses Registrasi</string>
+    <string name="signup_enter_name_rule_title">Aturan Nama Toko</string>
+    <string name="signup_enter_name_rule_subtitle">Pastikan nama toko anda adalah nama toko sebenarnya dan jumlah maksimal terdiri dari 20 karakter</string>
+    <string name="signup_enter_name_rule_subtitle_1">Pastikan nama toko anda adalah nama toko sebenarnya dan jumlah maksimal terdiri dari 30 karakter</string>
+
+
+    <string name="signup_enter_password_title">Masukan Password</string>
+
+    <string name="signup_enter_referal_title">Punya Kode Referal?</string>
+    <string name="signup_enter_referal_subtitle">Dengan Memasukan kode referal anda akan mendapatkan cashback senilai Rp. 50,- untuk setiap transaksi</string>
+    <string name="signup_enter_referal_empty">Kode referal kosong</string>
+
+    <string name="signup_success_title">Hore, Akun Anda Berhasil Dibuat !</string>
+    <string name="signup_success_subtitle">Ayo mulai transaksi dan raih keuntungan hingga jutaan rupiah setiap harinya!</string>
+
+    <string name="create_password_title">Buat Password Baru</string>
+    <string name="confirm_password_title">Konfirmasi Password Baru</string>
+    <string name="condition_password_1">Minimal 8 Karakter</string>
+    <string name="condition_password_2">Mengandung 1 Huruf Kapital</string>
+    <string name="condition_password_3">Mengandung 1 Huruf Kecil</string>
+    <string name="condition_password_4">Mengandung 1 Angka</string>
+
+    <string name="top_up_title">Top Up Mulai Dari Rp. 50.000</string>
+    <string name="top_up_quick_nominal_title">Pilih Nominal Cepat</string>
+
+    <string name="choose_payment_available_payment_title">Metode Pembayaran Tersedia</string>
+    <string name="choose_payment_swipe_detail_title">GESER UNTUK LIHAT DETAIL</string>
+    <string name="choose_payment_swipe_hide_detail_title">GESER UNTUK SEMBUNYIKAN DETAIL</string>
+    <string name="choose_payment_detail_va">Konfirmasi otomatis 24 jam</string>
+    <string name="choose_payment_not_choosen">Metode pembayaran belum dipilih</string>
+    <string name="choose_payment_insufficient_balance">Saldo deposit tidak mencukupi</string>
+    <string name="choose_payment_detail_bank_transfer">Pengecekan manual (08.00 - 21.00 WIB)</string>
+
+    <!-- <code> -->
+    <string name="choose_payment_detail_retail">Alfamart, Alfamidi, Alfaexpress</string>
+    <string name="choose_payment_detail_qris">OVO, Gopay, DANA</string>
+    <!-- </code> -->
+
+    <string name="coupon_have_coupon">Punya Kode Kupon Sendiri?</string>
+    <string name="coupon_use_coupon">Pakai Kupon</string>
+    <string name="coupon_detail_description">Deskripsi</string>
+    <string name="coupon_detail_term">Ketentuan</string>
+    <string name="coupon_detail_title">Detail Kupon</string>
+    <string name="coupon_default_title">Kupon diskon Rajapay</string>
+    <string name="coupon_detail_notes">Anda telah membeli kupon ini dan dapat digunakan  %1$dX lagi! Ayo gunakan terus kupon mu sebelum masa aktif kupon berakhir.</string>
+
+    <string name="home_mobile_data">Paket Data</string>
+    <string name="home_mobile_credit">Pulsa</string>
+    <string name="home_electrical_token">Token PLN</string>
+    <string name="home_games">Permainan</string>
+    <string name="home_electronic_money">Uang Elektronik</string>
+    <string name="home_transfer_bank">Transfer Bank</string>
+    <string name="home_topup_games">Top Up Permainan</string>
+    <string name="home_voucher_games">Voucher Permainan</string>
+    <string name="home_postpaid">Pascabayar</string>
+    <string name="home_electrical">Listrik</string>
+
+    <string name="home_product_closed_title">Product Closed!!!</string>
+    <string name="home_product_closed_detail">Silahkan hubungi CS untuk fitur ini</string>
+    <string name="home_product_closed_action_1">TUTUP</string>
+
+    <string name="home_verification_failed">Akun belum terverifikasi. Silahkan verifikasi akun terlebih dahulu.</string>
+
+    <!-- <code> -->
+    <string name="home_electrical_bill">Tagihan PLN</string>
+    <string name="home_gas_bill">Tagihan PGN</string>
+    <string name="home_gas_provider">PGN</string>
+    <string name="home_electrical_provider">PLN</string>
+    <string name="home_insurance_bill">Tagihan BPJS</string>
+    <!-- </code> -->
+    <string name="home_gas">PGN (Gas)</string>
+    <string name="home_insurance">Asuransi (BPJS)</string>
+    <string name="home_water_pdam">PDAM</string>
+    <string name="home_water_pdam_invoice">Tagihan PDAM</string>
+    <string name="home_insurance_bpjs">BPJS</string>
+    <string name="home_insurance_2">Periode BPJS</string>
+    <string name="home_water">Air (PDAM)</string>
+    <string name="home_tv">TV Berlangganan</string>
+    <string name="home_phone">Telkom</string>
+    <string name="home_multifinance">Multifinance</string>
+    <string name="home_multifinance_2">Daftar Harga</string>
+    <string name="home_menu_home">Beranda</string>
+    <string name="home_menu_order">Pesanan</string>
+    <string name="home_menu_cashier">Kasir</string>
+    <string name="home_menu_agency">Keagenan</string>
+    <string name="home_menu_account">Akun</string>
+
+    <string name="pay_alfamart_order_no">Nomor Tagihan</string>
+
+    <string name="pay_bank_transfer_account_name">PT. Rajapay Teknologi Indonesia</string>
+    <string name="pay_bank_transfer_how_to_pay">Cara Bayar</string>
+    <string name="pay_bank_transfer_already_pay">Saya sudah bayar</string>
+    <string name="pay_bank_transfer_notice">Transfer tepat sampai 3 digit terakhir. Kesalahan pencantuman nomor rekening tujuan dan atau jumlah transfer merupakan tanggung jawab agen sepenuhnya</string>
+
+    <string name="pay_bank_transfer_confirmation_title">Konfirmasi Pembayaran</string>
+    <string name="pay_bank_transfer_detail_title">Detail Pembayaran</string>
+    <string name="pay_continue_confirmation_title">Lanjut Pembayaran</string>
+    <string name="pay_bank_transfer_confirmation_detail">Apabila menekan tombol <b>KONFIRMASI PEMBAYARAN</b> tapi <b>belum melakukan pelunasan</b> maka transaksi ini akan tetap <b>MENUNGGU</b>. Bayar tepat hingga <b>TIGA (3) DIGIT</b> terakhir untuk mempermudah proses konfirmasi.</string>
+
+    <string name="payment_success_title">Transaksi Berhasil</string>
+    <string name="payment_success_subtitle">Transaksi anda berhasil. Anda dapat melihat transaksi pada pesanan</string>
+    <string name="payment_manual_title">Transaksi Butuh Tindakan</string>
+    <string name="payment_pending_title">Transaksi Sedang di Proses</string>
+    <string name="payment_manual_subtitle">Pembayaran sudah diterima, namun butuh tindakan pada layar detail pesanan</string>
+    <string name="payment_pending_subtitle">Pembayaran sudah diterima! Mohon bersabar ya transaksi kamu sedang kita proses</string>
+    <string name="payment_success_print">Cetak &amp; catat transaksi</string>
+    <string name="payment_manual_print">Ke Detail Pesanan</string>
+    <string name="payment_cancel_order">Batalkan Transaksi</string>
+    <string name="payment_cancel_order_deposit">Batalkan Isi Deposit</string>
+
+    <string name="pay_payment_time_title">Sisa Waktu Pembayaran</string>
+    <string name="pay_total_payment_title">Total Pembayaran</string>
+    <string name="pay_total_payment_min_title">Total Pembayaran Minimal</string>
+    <string name="pay_total_payment_max_title">Total Pembayaran Maksimal</string>
+    <string name="pay_payment_to_va_title">Pembayaran ke Virtual Account</string>
+    <string name="pay_payment_to_qris_title">Pembayaran menggunakan QRIS</string>
+    <string name="pay_payment_to_alfamart_title">Pembayaran menggunakan Gerai Alfamart</string>
+    <string name="pay_how_to_pay_label">CARA BAYAR VIRTUAL ACCOUNT</string>
+    <string name="pay_how_to_pay_qris_label">CARA BAYAR QRIS</string>
+    <string name="pay_trouble_transaction_label">Mengalami Kendala Mengenai Transaksi ini?</string>
+    <string name="pay_contact_cs_label">Kontak CS</string>
+    <string name="pay_secure_transaction_label">Demi kenyamanan simpan struk transaksi ini sebagai bukti pembayaran yang sah</string>
+    <string name="pay_detail_payment_label">Total pembayaran diatas akan muncul secara otomatis saat anda memasukan nomor VA yang benar</string>
+    <string name="pay_detail_barcode_label">Total pembayaran diatas akan muncul secara otomatis saat anda scan barcode</string>
+    <string name="pay_detail_payment_alfamart_label">Informasikan nomor tagihan diatas pada kasir Alfamart untuk melakukan proses pembayaran</string>
+
+    <string name="pay_detail_label">LIHAT DETAIL</string>
+
+    <string name="payment_enter_pin">Masukan PIN Anda</string>
+    <string name="payment_enter_pin_empty">PIN kosong</string>
+    <string name="payment_enter_pin_too_short">PIN harus 6 karakter</string>
+
+    <string name="contact_us_detail_title">Silahkan Pilih Masalah Anda Terkait Transaksi ini</string>
+
+    <string name="contact_us_confirmation_card_name_empty">Nama pemilik kartu debit kosong</string>
+    <string name="contact_us_confirmation_card_no_empty">Nomor pemilik kartu debit kosong</string>
+    <string name="contact_us_confirmation_acc_no_empty">Nomor rekening kosong</string>
+    <string name="contact_us_confirmation_attachment_empty">Lampiran kosong</string>
+    <string name="contact_us_confirmation_acc_no_length_exceed">Nomor rekening melebihi 100 karakter</string>
+    <string name="contact_us_confirmation_card_name_length_exceed">Nama pemilik kartu debit melebihi 100 karakter</string>
+
+    <string name="add_code_coupon_title">Kode Kupon</string>
+    <string name="add_code_coupon_enter">Masukan Kupon</string>
+    <string name="add_code_coupon_empty_coupon">Kode Kupon Kosong</string>
+
+    <string name="detail_ticket_chat_empty">Tidak ada pesan yang dikirim</string>
+
+    <string name="coupon_list_empty_title">Oops, Kupon Tidak Ditemukan</string>
+    <string name="coupon_list_empty_subtitle">Maaf, Saat ini tidak ada kupon yang tersedia</string>
+
+    <string name="add_coupon_confirmation_title">Gunakan Kupon</string>
+    <string name="add_coupon_confirmation_detail">akan digunakan pada transaksi anda</string>
+    <string name="add_coupon_confirmation_use">Gunakan</string>
+    <string name="add_coupon_confirmation_later">Nanti Saja</string>
+
+    <string name="contact_us_confirmation_problem">Masalah:</string>
+    <string name="contact_us_confirmation_problem_detail">Detail Masalah:</string>
+    <string name="contact_us_confirmation_cc_name">Nama Pemilik Kartu Debit:</string>
+    <string name="contact_us_confirmation_cc_no">Nomor Rekening Pemilik Kartu:</string>
+    <string name="contact_us_confirmation_cc_last_no">Nomor Kartu Debit (6 Digit Terakhir):</string>
+    <string name="contact_us_confirmation_attachment">Lampiran:</string>
+
+    <string name="main_menu_prepaid_data_title">Masukan Nomor Handphone Tujuan Anda</string>
+    <string name="main_menu_prepaid_data_available_operator">Operator Tersedia</string>
+    <string name="main_menu_prepaid_data_regular">Regular</string>
+    <string name="main_menu_prepaid_data_ngrs">NGRS</string>
+
+    <string name="main_menu_prepaid_games_header">Permainan</string>
+    <string name="main_menu_prepaid_games_title">Pilih permainan dibawah ini</string>
+    <string name="main_menu_prepaid_games_placeholder">Cari permainan...</string>
+    <string name="main_menu_prepaid_input_id_placeholder">Masukan Id Games...</string>
+    <string name="main_menu_prepaid_input_id_title_voucher">Voucher Games</string>
+    <string name="main_menu_prepaid_input_id_title_topup">Topup Games</string>
+    <string name="main_menu_prepaid_input_id_error_input">Mohon masukan ID Games</string>
+    <!-- @author : liao.mei
+         @note : issue 30
+         <code>
+    -->
+    <string name="main_menu_prepaid_data_modal_notice">Transaksi Mudah, Cepat &amp; Aman. Dengan melanjutkan proses ini, kamu sudah menyetujui &lt;a href="https://api.rajapay.co.id/vendors/pyfz/term.html">syarat &amp; ketentuan&lt;/a></string>
+    <string name="main_menu_premium_link">https://api.rajapay.co.id/vendors/pyfz/premium.html</string>
+    <!-- </code> -->
+    <string name="main_menu_electrical_token_title">Masukan Nomor Meteran / ID Pelanggan</string>
+    <string name="main_menu_electrical_token_info">Berdasarkan ketentuan PLN, transaksi token tidak dapat dilakukan pukul 23.30 WIB - 00.30 WIB (Cut Off)</string>
+    <string name="main_menu_electrical_token_customer_no">No Meteran / ID Pelanggan</string>
+
+    <string name="main_menu_postpaid_data_choose_provider_title">Pilih Provider Yang Tersedia</string>
+    <string name="main_menu_postpaid_data_empty_phone_no">No telpon kosong</string>
+
+    <string name="main_menu_confirmation_electrical_token_notice">Komisi Transaksi akan diberikan H+1 Setelah Transaksi</string>
+    <string name="main_menu_confirmation_coupon_notice">Jika kupon tidak muncul maka ada persyaratan kupon yang tidak terpenuhi</string>
+    <string name="main_menu_confirmation_choose_payment">Pilih Metode Pembayaran</string>
+
+    <string name="main_menu_gas_title">Masukan Nomor ID Pelanggan</string>
+    <string name="main_menu_gas_empty_no">Nomor ID Pelanggan kosong</string>
+
+    <string name="main_menu_insurance_title">Masukan Nomor Peserta/No. VA Keluarga</string>
+    <string name="main_menu_insurance_label">Nomor Peserta / No. VA Keluarga</string>
+    <string name="main_menu_insurance_empty_no">Nomor Peserta/No. VA Keluarga kosong</string>
+    <string name="main_menu_insurance_pay_to_title">Bayar Hingga</string>
+    <string name="main_menu_insurance_pay_to_item"> Bulan ke Depan</string>
+
+    <string name="main_menu_water_choose_provider_toolbar">Area PDAM</string>
+    <string name="main_menu_water_choose_provider">Pilih PDAM</string>
+    <string name="main_menu_water_title">Masukan Nomor Meteran / ID Pelanggan</string>
+    <string name="main_menu_water_empty_no">Nomor Meteran / No. Pelanggan kosong</string>
+
+    <string name="main_menu_emoney_choose_product">Daftar Uang Elektronik</string>
+    <string name="main_menu_emoney_title">Uang Elektronik</string>
+    <string name="main_menu_topup_emoney">Topup Uang Elektronik</string>
+    <string name="main_menu_emoney_input_phone_number">Masukan Nomor Ponsel</string>
+    <string name="main_menu_emoney_rule">Pastikan nomor yang Anda masukan benar dan sesuai dengan nomor pengguna</string>
+    <string name="main_menu_emoney_empty_error">Nomor ponsel kosong</string>
+    <string name="main_menu_emoney_denomination_title">Pilih Nominal</string>
+
+    <string name="main_menu_banktransfer_choose_product">Daftar Bank Tujuan</string>
+    <string name="main_menu_banktransfer_title">Transfer</string>
+    <string name="main_menu_banktransfer_input_bank_account">Masukan Nomor Rekening</string>
+    <string name="main_menu_banktransfer_rule">Pastikan nomor yang Anda masukan benar dan sesuai dengan nomor rekening pengguna</string>
+    <string name="main_menu_banktransfer_error_empty_account_no">Nomor rekening kosong</string>
+    <string name="main_menu_banktransfer_error_empty_denomination">Nilai nominal anda kosong</string>
+    <string name="main_menu_banktransfer_error_minimum_denomination">Minimum nilai transfer adalah Rp. 50.000</string>
+    <string name="main_menu_banktransfer_start_transfer">Transfer Mulai Dari Rp. 50.000</string>
+
+    <string name="main_menu_tv_choose_provider">Pilih Penyedia Internet &amp; TV</string>
+    <string name="main_menu_tv_title">Masukan Nomor Pelanggan</string>
+    <string name="main_menu_tv_hint">Nomor Pelanggan</string>
+    <string name="main_menu_tv_empty_no">Nomor Pelanggan kosong</string>
+
+    <string name="main_menu_phone_choose_provider">Pilih Penyedia Jaringan Telpon</string>
+
+    <string name="main_menu_multifinance_choose_provider">Pilih Penyedia Multifinance</string>
+
+    <string name="order_detail_transaction_payment_detail">Detail Pembayaran</string>
+    <string name="order_detail_transaction_ref_no">Nomor Referensi</string>
+
+    <!-- <code> -->
+    <string name="order_detail_transaction_refund_detail">Alasan Refund</string>
+    <!-- </code> -->
+
+    <!-- <code> -->
+    <string name="order_detail_transaction_detail">Detail Pesanan</string>
+    <!-- </code> -->
+    <string name="order_detail_transaction_order_again">Pesan Lagi</string>
+    <string name="order_detail_transaction_manual_advice">Proses Pesanan</string>
+
+    <string name="print_order_overview_overview_bill">Rangkuman Tagihan</string>
+
+    <string name="print_choose_device_print_pdf">Cetak PDF</string>
+    <string name="print_choose_device_send_to_device">Cetak Bluetooth</string>
+
+    <string name="print_choose_device_title">Pilih Printer Bluetooth yang Tersedia</string>
+    <string name="print_choose_device_add_connection">Tambah Koneksi Printer</string>
+
+    <string name="print_confirmation_change_sell_price">Ubah Harga Jual</string>
+    <string name="print_confirmation_print_now">Cetak Sekarang</string>
+
+    <string name="print_confirmation_manage_sell_price_title">Atur Harga Jual Yang Anda Inginkan</string>
+    <string name="print_confirmation_manage_sell_price_notice">Harga Jual adalah harga yang ditampilkan pada struk untuk pembeli</string>
+    <string name="print_confirmation_manage_sell_price_empty_sell_price">Harga jual kosong</string>
+    <string name="print_confirmation_manage_sell_price_lower_sell_price">Harga jual dibawah harga yang anjurkan</string>
+    <string name="print_confirmation_manage_sell_price_complete_sell_price">Harga jual berhasil diatur</string>
+
+    <string name="print_device_name">Nama</string>
+    <string name="print_device_denda">Denda</string>
+    <string name="print_device_referensi">Referensi</string>
+    <string name="print_device_no_contract">No. Kontrak</string>
+    <string name="print_device_no_meter">No. Meter</string>
+    <string name="print_device_postpaid_pln_id_pel">IDPEL</string>
+    <string name="print_device_no_pgn">IDPEL</string>
+    <string name="print_device_no_bpjs">No VA</string>
+    <string name="print_device_no_pdam">ID PEL</string>
+    <string name="print_device_no_pelanggan">No. Pelanggan</string>
+    <string name="print_device_id_pel">ID PEL</string>
+    <string name="print_device_address">Alamat</string>
+    <string name="print_device_idpel">IDPEL</string>
+    <string name="print_device_period">Periode</string>
+    <string name="print_device_lembar_tagih">Lembar Tagih</string>
+    <string name="print_device_biaya_admin">Biaya Admin</string>
+    <string name="print_device_pemakaian">Pemakaian</string>
+    <string name="print_device_nilai_tagihan">Nilai Tagihan</string>
+    <!-- <code> -->
+    <string name="print_device_tarif">Tarif</string>
+    <string name="print_device_nomor_account">Nomor Account</string>
+    <!-- </code> -->
+    <string name="print_device_jumlah_tagihan">Jumlah Tagihan</string>
+    <string name="print_device_fee">Fee</string>
+    <string name="print_device_tagihan">Tagihan</string>
+    <string name="print_device_admin">Admin</string>
+    <string name="print_device_total">Total</string>
+    <string name="print_device_total_detail">Total Tagihan</string>
+    <string name="print_device_terbilang">Terbilang</string>
+    <string name="print_device_no_ref">No Ref</string>
+    <string name="print_device_sn_ref">SN/Ref</string>
+    <string name="print_device_ref">Ref</string>
+    <string name="print_device_no_ref_1">No Ref 1</string>
+    <string name="print_device_no_ref_2">No Ref 2</string>
+    <string name="print_device_tanggal">Tanggal</string>
+    <string name="print_device_nama_layanan">Nama Layanan</string>
+    <string name="print_device_jatuh_tempo">Jatuh Tempo</string>
+    <string name="print_device_no_reference">No. Referensi</string>
+    <string name="print_device_no_hp">No. Pelanggan</string>
+    <string name="print_device_layanan">Layanan</string>
+    <string name="print_device_tanggal_bayar">Tanggal Bayar</string>
+    <string name="print_device_prepaid_data_type">Tipe Paket Data</string>
+    <string name="print_device_prepaid_data_detail">Detail Paket Data</string>
+    <string name="print_device_prepaid_pulsa_type">Tipe Paket Pulsa</string>
+    <string name="print_device_prepaid_pulsa_detail">Detail Paket Pulsa</string>
+    <!-- <code> -->
+    <string name="print_device_prepaid_pln_tarif_daya">Tarif/Daya</string>
+    <string name="print_device_postpaid_pln_bl_th">BL/TH</string>
+    <!-- </code> -->
+    <!-- <code-tdd-12445> -->
+    <string name="print_device_prepaid_pln_no_meter">No Meter</string>
+    <string name="print_device_prepaid_pln_id_pel">IDPEL</string>
+    <string name="print_device_prepaid_pln_no_ref">No Ref</string>
+    <string name="print_device_prepaid_pln_rp_bayar">Rp. Bayar</string>
+    <string name="print_device_prepaid_pln_meterai">Meterai</string>
+    <string name="print_device_prepaid_pln_ppn">PPN</string>
+    <string name="print_device_prepaid_pln_ppj">PPJ</string>
+    <string name="print_device_prepaid_pln_angsuran">Angsuran</string>
+    <string name="print_device_prepaid_pln_rp_stroom">Rp Stroom/Token</string>
+    <string name="print_device_prepaid_pln_jml_kwh">Jml. KWH</string>
+    <string name="print_device_prepaid_pln_admin">Admin</string>
+    <string name="print_device_prepaid_pln_stroom_token">STROOM/TOKEN</string>
+
+    <string name="print_device_prepaid_banktransfer_bank_name">Nama Bank</string>
+    <string name="print_device_prepaid_banktransfer_account_no">No. Rekening</string>
+    <string name="print_device_prepaid_banktransfer_account_name">Nama Rekening</string>
+    <string name="print_device_prepaid_banktransfer_info">No. Ref. Bank</string>
+
+    <string name="print_device_prepaid_pln_info">PLN Info</string>
+    <string name="print_device_postpaid_pln_info">PLN Info</string>
+    <string name="print_device_postpaid_pdam_info">PDAM Info</string>
+    <string name="print_device_postpaid_info_1">INFO 1</string>
+    <string name="print_device_postpaid_info_2">INFO 2</string>
+    <string name="print_device_postpaid_pln_sah">PLN menyatakan struk ini sebagai bukti pembayaran yang sah.</string>
+    <string name="print_device_prepaid_info">Info</string>
+    <!-- </code-tdd-12445> -->
+    <string name="print_device_prepaid_pln_kwh">kWh</string>
+    <string name="print_device_prepaid_pln_token">Token</string>
+    <string name="print_device_postpaid_pln_daya">Daya</string>
+    <string name="print_device_postpaid_pln_total_lembar_tagihan">Tot. Lembar Tagihan</string>
+    <string name="print_device_postpaid_pln_lembar_tagihan">Lembar Tagihan</string>
+    <string name="print_device_postpaid_pln_sisa_tagihan">Sisa Tunggakan</string>
+    <string name="print_device_postpaid_pln_rp_tag_pln">RP TAG PLN</string>
+    <string name="print_device_postpaid_pln_admin">Admin</string>
+    <string name="print_device_postpaid_pln_total_bayar">Total Bayar</string>
+    <string name="print_device_postpaid_pln_denda">Denda</string>
+    <string name="print_device_postpaid_pln_total">Total Bayar</string>
+    <string name="print_device_postpaid_pln_no_ref">No Ref</string>
+    <string name="print_device_postpaid_pln_stand_meter">Stand Meter</string>
+    <string name="print_device_postpaid_pgn_stand_awal">Stand Awal</string>
+    <string name="print_device_postpaid_pgn_stand_akhir">Stand Akhir</string>
+    <string name="print_device_postpaid_bpjs_nama_cabang">Nama Cabang</string>
+    <string name="print_device_postpaid_bpjs_jumlah_periode">Jumlah Periode</string>
+    <string name="print_device_postpaid_bpjs_jumlah_peserta">Jumlah Peserta</string>
+    <string name="print_device_postpaid_bpjs_no_peserta">No. Peserta</string>
+    <string name="print_device_postpaid_bpjs_premi">Premi</string>
+    <string name="print_device_postpaid_bpjs_saldo">Saldo</string>
+    <string name="print_device_postpaid_pdam_ref">No Ref PDAM</string>
+    <string name="print_device_postpaid_pdam_meter_awal">Meter Awal</string>
+    <string name="print_device_postpaid_pdam_meter_akhir">Meter Akhir</string>
+    <string name="print_device_postpaid_pdam_pemakaian">Pemakaian</string>
+    <string name="print_device_postpaid_pdam_stand_meter">Stand Meter</string>
+    <string name="print_device_postpaid_pdam_penalty">Penalty</string>
+    <string name="print_device_postpaid_pdam_tagihan_lain">Tagihan Lain</string>
+    <string name="print_device_postpaid_tv_no_referensi_1">No Ref 1</string>
+    <string name="print_device_postpaid_tv_no_referensi_2">No Ref 2</string>
+    <string name="print_device_postpaid_tv_no_referensi">Ref</string>
+    <string name="print_device_postpaid_tv_paket">Paket</string>
+    <string name="print_device_postpaid_telkom_kode_area">Kode Area</string>
+    <string name="print_device_postpaid_telkom_divre">DivRe</string>
+    <string name="print_device_postpaid_telkom_datel">DaTel</string>
+    <string name="print_device_postpaid_telkom_divre_datel">DIVRE/DATEL</string>
+    <string name="print_device_postpaid_multifinance_angsuran_ke">Angsuran Ke</string>
+    <string name="print_device_postpaid_multifinance_nama_cabang">Cabang</string>
+    <string name="print_device_postpaid_multifinance_provider">Provider</string>
+    <string name="print_device_postpaid_multifinance_nama_barang">Objek</string>
+    <string name="print_device_postpaid_multifinance_no_rangka">No Rangka</string>
+    <string name="print_device_postpaid_multifinance_no_polisi">No Polisi</string>
+    <string name="print_device_postpaid_multifinance_periode_pembayaran_terakhir">Periode Pembayaran Terakhir</string>
+    <string name="print_device_postpaid_multifinance_batas_waktu_pembayaran_terakhir">Batas Waktu Pembayaran Terakhir</string>
+    <!-- <code> -->
+    <string name="print_device_postpaid_multifinance_tenor">Tenor</string>
+    <string name="print_device_postpaid_multifinance_penalty">Penalty</string>
+    <!-- </code> -->
+
+    <string name="order_deposit_mutation_beginning">Mutasi Awal</string>
+    <string name="order_deposit_mutation_in">Mutasi Masuk</string>
+    <string name="order_deposit_mutation_out">Mutasi Keluar</string>
+    <string name="order_deposit_mutation_final">Deposit Akhir</string>
+    <string name="order_deposit_mutation_print">Cetak Mutasi</string>
+    <string name="order_deposit_mutation_download">Download Mutasi dimulai</string>
+
+    <string name="cashier_transaction">Pencatatan Transaksi</string>
+    <string name="cashier_sales">Penjualan</string>
+    <string name="cashier_profit">Keuntungan</string>
+    <string name="cashier_add_transaction">Catat Transaksi</string>
+    <string name="cashier_manage_sell_price">Atur Harga Jual</string>
+    <string name="cashier_monthly_report">Laporan Bulanan</string>
+
+    <string name="cashier_monthly_report_total_sales">Total Penjualan</string>
+    <string name="cashier_monthly_report_total_profit">Total Keuntungan</string>
+    <string name="cashier_monthly_report_download_report">Download Laporan</string>
+
+    <string name="cashier_manage_sell_price_choose_product">Pilih Produk Tersedia</string>
+    <string name="cashier_manage_sell_price_choose_product_app_price">Harga Rajapay</string>
+    <string name="cashier_manage_sell_price_choose_product_price">Harga Jual</string>
+
+    <string name="agency_banner_title">Mau Dapat Untung?</string>
+    <string name="agency_banner_desc">Jadi Agen Premium Sekarang!</string>
+    <string name="agency_upgrade_premium">Upgrade ke Premium</string>
+    <string name="agency_feature">Fitur - Fitur</string>
+    <string name="agency_target">Target Agen</string>
+    <string name="agency_dashboard_premium">Dashboard Premium</string>
+    <string name="agency_commition_history">Riwayat Komisi</string>
+    <string name="agency_tips">Rajapay Tips</string>
+    <string name="agency_promotion">Alat Promosi</string>
+    <string name="agency_nearest_agent">Agen Terdekat</string>
+
+    <string name="agency_upgrade_premium_premium">Agen Premium</string>
+    <string name="agency_upgrade_premium_super">Agen Super</string>
+
+    <string name="agency_upgrade_premium_detail_agree_to_pay">Saya setuju, bayar Rp. </string>
+
+    <string name="agency_target_this_month">Target Agen Bulan Ini</string>
+    <string name="agency_target_more">x Transaksi lagi</string>
+    <string name="agency_target_history">Riwayat Target</string>
+
+    <string name="agency_dashboard_commition">Komisi</string>
+    <string name="agency_dashboard_agent">Agen</string>
+    <string name="agency_dashboard_bonus">Bonus</string>
+
+    <string name="agency_dashboard_commition_accumulated">Akumulasi komisi anda</string>
+    <string name="agency_dashboard_commition_info">Jumlah ini adalah total dari Komisi Referral + Komisi Transaksi yang terakumulasi dari awal hingga saat ini</string>
+    <string name="agency_dashboard_commition_detail">Rincian Total Komisi</string>
+    <string name="agency_dashboard_commition_referral">Komisi Referral</string>
+    <string name="agency_dashboard_commition_transaction">Komisi Transaksi</string>
+
+    <string name="agency_dashboard_commition_detail_title">Total Komisi Transaksi Premium Anda</string>
+
+    <string name="agency_dashboard_agent_total">Total Agen yang Direkrut</string>
+    <string name="agency_dashboard_agent_info">Jumlah ini adalah total dari seluruh agen yang telah anda rekrut, baik referral dan premium</string>
+    <string name="agency_dashboard_agent_detail">Rincian Total Agen</string>
+    <string name="agency_dashboard_agent_referral">Agen Referral</string>
+    <string name="agency_dashboard_agent_transaction">Agen Transaksi</string>
+
+    <string name="agency_dashboard_agent_detail_title">Total Agen Referral Anda</string>
+
+    <string name="agency_dashboard_agent_detail_valid">Valid</string>
+    <string name="agency_dashboard_agent_detail_invalid">Tidak Valid</string>
+
+    <string name="agency_dashboard_bonus_title">Ayo Rekrut Agen Premiumnya</string>
+    <string name="agency_dashboard_bonus_more">Agen Lagi</string>
+    <string name="agency_dashboard_bonus_info">Total Rekrut Agen Premium Anda:</string>
+    <string name="agency_dashboard_bonus_info_2">Agen Premium</string>
+    <string name="agency_dashboard_bonus_help_title">Ada masalah saat klaim bonus?</string>
+    <string name="agency_dashboard_bonus_help_button">Lihat Bantuan</string>
+    <string name="agency_dashboard_bonus_help_alternate">Kirim email ke hello@rajapay.co.id</string>
+
+    <string name="agency_commition_history_pending">Menunggu</string>
+    <string name="agency_commition_history_success">Berhasil</string>
+    <string name="agency_commition_history_cancel">Batal</string>
+
+    <string name="agency_commition_history_pending_total">Total Komisi Menunggu Anda</string>
+    <string name="agency_commition_history_success_total">Total Komisi Berhasil Anda</string>
+    <string name="agency_commition_history_cancel_total">Total Komisi Batal Anda</string>
+
+    <string name="agency_commition_history_filter">Filter Bulan</string>
+    <string name="agency_commition_history_filter_all">Semua Bulan</string>
+    <string name="agency_commition_history_filter_this_month">Bulan Ini</string>
+    <string name="agency_commition_history_filter_last_month">Bulan Lalu</string>
+    <string name="agency_commition_history_filter_2_last_month">2 Bulan Lalu</string>
+
+    <string name="contact_cs_modal_title">GESER UNTUK SEMBUNYIKAN BANTUAN</string>
+    <string name="contact_cs_pertanyaan_umum">Pertanyaan Umum</string>
+    <string name="contact_cs_pertanyaan_umum_detail">Pertanyaan Umum Seputar Aplikasi &amp; Cara Penggunaannya</string>
+    <string name="contact_cs_pertanyaan_akun">Kendala Akun &amp; Login</string>
+    <string name="contact_cs_pertanyaan_akun_detail">Masalah Mengenai Akun, Verifikasi, Registrasi dan Login </string>
+    <string name="contact_cs_pertanyaan_deposit">Kendala Deposit</string>
+    <string name="contact_cs_pertanyaan_deposit_detail">Permasalahan Mengenai Topup Saldo &amp; Deposit</string>
+    <string name="contact_cs_pertanyaan_transaksi">Kendala Transaksi</string>
+    <string name="contact_cs_pertanyaan_transaksi_detail">Terkait Dengan Status Transaksi ataupun Proses Refund</string>
+
+    <string name="agency_commition_history_empty_title">Data Tidak Ditemukan</string>
+    <string name="agency_commition_history_empty_subtitle">Maaf, Tidak ada data disini.\nSilahkan coba lagi atau menuju beranda</string>
+
+    <string name="account_verification_title">Verifikasi Akun</string>
+    <string name="account_verification_subtitle">Lengkapi Dokumen untuk Buka Fitur</string>
+    <string name="account_your_qr_title">QR Anda</string>
+    <string name="account_your_qr_subtitle">QR untuk Kemudahan Transaksi</string>
+    <string name="account_information_title">Informasi</string>
+    <string name="account_information_subtitle">Lihat Informasi Lainnya</string>
+    <string name="account_term_condition_title">Syarat dan Ketentuan Kemitraan</string>
+    <string name="account_term_condition_subtitle">Lihat Syarat dan Ketentuan Kemitraan</string>
+    <string name="account_logout_title">Keluar Akun</string>
+    <string name="account_pin_title">Pengaturan PIN dibutuhkan</string>
+
+    <string name="account_manage_account_change_name_title">Nama Toko</string>
+    <string name="account_manage_account_change_name_subtitle">Ubah Nama Toko Anda</string>
+    <string name="account_manage_account_change_email_title">Email Akun</string>
+    <string name="account_manage_account_change_email_subtitle">Ubah Email Akun RajaPay Anda</string>
+    <string name="account_manage_account_change_password_title">Password Akun</string>
+    <string name="account_manage_account_change_password_subtitle">Ubah Password Akun RajaPay Anda</string>
+    <string name="account_manage_account_change_pin_title">Ubah PIN</string>
+    <string name="account_manage_account_change_pin_subtitle">Ubah PIN Keamanan untuk Transaksi Anda</string>
+
+    <string name="account_manage_account_change_name_empty_name">Nama Toko kosong</string>
+    <string name="account_manage_account_change_name_too_long">Nama Toko maksimum 30 karakter</string>
+
+    <string name="account_manage_account_change_email_toolbar">Ubah Email Akun</string>
+    <string name="account_manage_account_change_email_new_email">Email Baru</string>
+    <string name="account_manage_account_change_email_enter">Masukan Email Baru Anda</string>
+    <string name="account_manage_account_change_email_empty_email">Email kosong</string>
+    <string name="account_manage_account_change_email_wrong_format">Email bukan dalam format email</string>
+    <string name="account_manage_account_change_email_too_long">Email maksimum 100 karakter</string>
+    <string name="account_manage_account_change_email_otp_send_to">KIRIM OTP KE</string>
+
+    <string name="account_manage_account_change_password_index_title">Masukan Password Baru Anda</string>
+
+    <string name="account_manage_account_change_password_confirm_toolbar">Konfirmasi Password</string>
+    <string name="account_manage_account_change_password_confirm_title">Konfirmasi Password Baru Anda</string>
+
+    <string name="account_manage_account_change_pin_index_toolbar">Ubah PIN Akun</string>
+
+    <string name="account_manage_account_change_pin_enter">Masukan PIN Baru Anda</string>
+    <string name="account_manage_account_change_pin_confirmation">Masukan PIN Baru Anda</string>
+    <string name="account_manage_account_change_pin_empty_pin">PIN kosong</string>
+    <string name="account_manage_account_change_pin_length_not_satisfied">Jumlah PIN kurang dari 6 karakter</string>
+    <string name="account_manage_account_change_pin_empty_confirmation_pin">PIN Konfirmasi kosong</string>
+    <string name="account_manage_account_change_pin_not_same_with_confirmation">PIN Konfirmasi tidak sama dengan PIN baru anda</string>
+
+    <string name="account_verification_intro_title">Isi Seluruh Dokumen yang Diperlukan</string>
+    <string name="account_verification_intro_id_card">Dokumen KTP</string>
+    <string name="account_verification_intro_biometric">Dokumen Biometrik</string>
+
+    <string name="account_verification_enter_id_no">Masukan Nomor KTP Anda (16 Digit)</string>
+    <string name="account_verification_enter_id_no_empty_no">Nomor KTP kosong</string>
+    <string name="account_verification_enter_id_no_length_insufficient">Nomor KTP tidak 16 digit</string>
+
+    <string name="account_verification_upload_id_card">Ambil Foto KTP Anda dengan Jelas dan Tidak Terpotong</string>
+    <string name="account_verification_upload_id_card_empty_picture">Foto KTP kosong</string>
+    <string name="account_verification_upload_id_card_secure">Sistem kami menjamin seluruh data anda aman dan rahasia. Tidak dapat digunakan oleh siapapun kecuali anda.</string>
+
+    <string name="account_verification_upload_selfie">Ambil Foto Selfie Anda dengan Jelas dan Tidak Terpotong</string>
+    <string name="account_verification_upload_selfie_example_title">Periksa Contoh Berikut</string>
+    <string name="account_verification_upload_selfie_example_subtitle">Pastikan Foto Anda sesuai Contoh</string>
+    <string name="account_verification_upload_selfie_empty_picture">Foto Selfie kosong</string>
+
+    <string name="account_verification_upload_selfie_example_modal_title">Foto Selfie</string>
+    <string name="account_verification_upload_selfie_example_modal_subtitle">Pastikan Wajah Anda Terlihat dengan Jelas dan Tidak Terpotong</string>
+
+    <string name="account_verification_biometric_intro">Pastikan Seluruh Data Dokumen Anda Terisi Seluruhnya secara Benar</string>
+    <string name="account_verification_biometric_intro_biometric_photo">Foto Tanda Tangan + KTP</string>
+
+    <string name="account_verification_upload_signature">Ambil Foto Tanda Tangan Anda Di atas Sebuah Kertas Putih Polos Berdampingan dengan KTP</string>
+    <string name="account_verification_upload_signature_empty_picture">Foto Tanda Tangan Anda kosong</string>
+
+    <string name="account_verification_upload_signature_example_modal_title">Foto KTP dengan Tanda Tangan</string>
+    <string name="account_verification_upload_signature_example_modal_subtitle">Pastikan seluruh KTP Anda Terlihat dengan Jelas dan Tidak Terpotong</string>
+
+    <string name="account_your_qr_change_nominal">Atur Nominal dan Berita pada Kode QR untuk Tagihan Anda</string>
+    <string name="account_your_qr_change_nominal_button">Ubah Nominal</string>
+    <string name="account_your_qr_share">Bagikan</string>
+    <string name="account_your_qr_share_qr_code">Bagikan Kode QR</string>
+    <string name="account_your_qr_scan_qr_ask">Ingin Kirim Deposit? </string>
+    <string name="account_your_qr_scan_qr">Pindai QR</string>
+
+    <string name="account_your_qr_enter_news">Masukan Berita Tagih Dana</string>
+    <string name="account_your_qr_enter_news_hint">Berita Tagih Dana</string>
+    <string name="account_your_qr_enter_news_empty">Berita Kosong</string>
+    <string name="account_your_qr_enter_news_too_long">Berita maksimum 100 karakter</string>
+
+    <string name="account_your_qr_share_modal">Bagikan Melalui</string>
+
+    <string name="account_your_qr_scan_description">Scan Kode QR untuk Melanjutkan Proses Pembayaran</string>
+    <string name="account_your_qr_scan_confirm_title_modal">Konfirmasi</string>
+    <string name="account_your_qr_scan_confirm_subtitle_modal">Anda akan mengirim %1$s untuk %2$s.
+        Apakah anda ingin melanjutkan proses ini?</string>
+    <string name="account_your_qr_scan_confirm_info_modal">Transfer deposit berhasil</string>
+
+    <string name="account_information_refund">Kebijakan Refund</string>
+    <string name="account_information_privasi">Kebijakan Privasi</string>
+    <string name="account_information_privasi_title">(\"Kebijakan Privasi\")</string>
+    <string name="account_information_privasi_detail">
+        <![CDATA[
+        Selamat datang di \'<strong>RajaPay</strong>\' (\"<strong>Aplikasi</strong>\"), Platform atau aplikasi layanan jasa berbasis teknologi informasi pada telepon genggam, telepon pintar yang dikelola oleh <strong>PT.RAJAPAY TEKNOLOGI NUSANTARA </strong>(\"<strong>Kami</strong>\" atau \"<strong>Perusahaan</strong>\").
+        <br/><br/>
+        Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, memperoleh, menyimpan, menggunakan, mengelola, menguasai, memindahkan, mengirimkan, mengungkapkan dan/atau melindungi segala informasi dan data yang diperoleh dari atau sehubungan dengan penggunaan Aplikasi . . . .
+        ]]>
+    </string>
+
+    <string name="account_logout_subtitle">Anda yakin untuk keluar sekarang?</string>
+    <string name="account_pin_subtitle">Aplikasi Rajapay membutuhkan PIN dalam setiap transaksi. Anda belum mengatur PIN. Lakukan pengaturan PIN sekarang</string>
+    <string name="account_logout_yes">Ya, Keluar Sekarang</string>
+    <string name="account_pin_yes">Ya, Atur Sekarang</string>
+
+    <string name="company_name">PT.RAJAPAY TEKNOLOGI INDONESIA</string>
+
+    <string name="print_device_bluetooth_off">Harap nyalakan bluetooth untuk menggunakan fitur ini</string>
+
+    <string name="choose_media_title">Choose Media</string>
+    <string name="choose_media_camera">Camera</string>
+    <string name="choose_media_gallery">Gallery</string>
+    <string name="filter">FILTER</string>
+
+    <string name="choose_payment_choose_bank">Pilih Bank Pembayaran</string>
+    <!-- <code> -->
+    <string name="hint_phone_number">08123456789</string>
+    <string name="hint_bank_account">34912345678</string>
+    <!-- </code> -->
+    <string name="hint_id_pelanggan">Nomor Pelanggan</string>
+    <string name="hint_search_product">Cari Produk</string>
+    <string name="hint_search_bank">Cari Bank Tujuan</string>
+    <string name="agency_referral_code">Kode Referral Agen Premium</string>
+    <string name="signup_enter_phone_empty">Nomor Telepon Kosong</string>
+    <string name="signup_enter_referal_digit">Kode referal kurang dari 6 digit</string>
+    <string name="otp_digit_label">Kode OTP kurang dari 6 digit</string>
+    <string name="share_using">Bagikan dengan</string>
+    <string name="my_referral_code">Kode Referral Saya</string>
+    <string name="share_code">BAGIKAN KODE</string>
+    <!-- <code> -->
+    <string name="deposit_amount_empty">Nilai deposit anda kosong</string>
+    <string name="deposit_amount_minimum">Minimum nilai deposit adalah Rp. 50.000</string>
+    <!-- </code> -->
+</resources>

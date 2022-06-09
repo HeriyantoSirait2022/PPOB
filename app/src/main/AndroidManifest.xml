@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qdi.rajapay"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        tools:replace="android:allowBackup"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme">
+
+        <service
+            android:name="com.qdi.rajapay.utils.FirebaseInstanceService"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter android:priority="100">
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.agency.dashboard_super.commition.DashboardSuperCommitionDetailReferralActivity"></activity>
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.agency.dashboard_super.commition.DashboardSuperCommitionDetailPremiumActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.agency.dashboard_super.agent.DashboardSuperAgentPremiumActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.agency.dashboard_super.agent.DashboardSuperAgentReferralActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.agency.dashboard_super.DashboardSuperIndexActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.payment.qris.QrisPayActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.payment.qris.QrisPayContActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.payment.alfamart.AlfamartPayActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.payment.alfamart.AlfamartPayContActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.SplashActivity"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.auth.signup.SignupOtpActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.payment.PaymentPinActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.main_menu.water.WaterPriceListActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.main_menu.tv.TvPriceListActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.main_menu.phone.PhonePriceListActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.main_menu.gas.GasPriceListActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.main_menu.electrical.ElectricalPriceListActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.main_menu.postpaid_data.PostpaidDataPriceListActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.your_qr.YourQrScanActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.your_qr.change_nominal.YourQrAddNewsActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.your_qr.change_nominal.YourQrChangeNominalActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.your_qr.YourQrIndexActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.information.InformationPrivacyPolicyActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.information.InformationRefundActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.information.InformationIndexActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.verification.VerificationBiometricIntroActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.verification.VerificationUploadSignatureActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.verification.VerificationUploadSelfieActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.verification.VerificationUploadIdCardActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.verification.VerificationEnterIdNoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.verification.VerificationIntroActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.manage_account.change_pin.ChangePinEnterOtpActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.manage_account.change_pin.ChangePinConfirmationActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.manage_account.change_pin.ChangePinIndexActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.manage_account.edit_password.EditPasswordConfirmationActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.manage_account.edit_password.EditPasswordIndexActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.manage_account.edit_email.EditEmailEnterOtpActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.manage_account.edit_email.EditEmailIndexActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.manage_account.edit_name.EditNameEnterPasswordActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.manage_account.edit_name.EditNameIndexActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.account.manage_account.ManageAccountIndexActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.agency.commition_history.CommitionHistoryIndexActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.agency.target.TargetIndexActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.agency.upgrade_premium.UpgradePremiumTermConditionActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.agency.upgrade_premium.UpgradePremiumDetailActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.cashier.manage_sell_price.ManageSellPriceChooseProductActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.print.PrintManageSellPriceActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.cashier.monthly_report.CashierMonthlyReportActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.cashier.CashierIndexActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.cashier.manage_sell_price.ManageSellPriceIndexActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.print.PrintConfirmationActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.print.PrintChooseDeviceActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.print.PrintAddDeviceActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.print.PrintSavePDFActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.print.PrintOrderOverviewActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.order.OrderDetailActivity"
+            android:parentActivityName="com.qdi.rajapay.home.MainActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.multifinance.MultifinanceInputNoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.multifinance.MultifinancePriceListActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.multifinance.MultifinanceChooseSubServiceActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.multifinance.MultifinanceChooseProviderActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.phone.PhoneInputNoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.phone.PhoneChooseProviderActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.tv.TvInputNoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.tv.TvChooseProviderActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.water.WaterInputNoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.water.WaterChooseAreaActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.insurance.InsurancePayToActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.insurance.InsurancePriceListActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.insurance.InsuranceInputNoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.gas.GasInputNoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.postpaid_data.PostpaidDataInputPhoneNoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.postpaid_data.PostpaidDataChooseProviderActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.electrical.ElectricalInputNoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.electrical_token.ElectricalTokenPriceListActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.electrical_token.ElectricalTokenInputNoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.MainMenuConfirmationActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.prepaid_mobile_credit.PrepaidMobileCreditInputPhoneNoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.inbox.ticket.DetailTicketActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.prepaid_data.PrepaidDataInputPhoneNoActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Games -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.games.PrepaidGamesSelectActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.games.PrepaidGamesInputIdActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- emoney -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.emoney.EmoneySelectActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.emoney.EmoneyInputActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.emoney.EmoneyDenominationActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- bank transfer -->
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.bank_transfer.BankTransferSelectActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.bank_transfer.BankTransferInputActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.main_menu.bank_transfer.BankTransferDenominationActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.contact_us.ContactUsConfirmationActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.contact_us.ContactUsDetailActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.contact_us.ContactUsListActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.payment.SuccessActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.inbox.news.DetailNotificationActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.inbox.InboxListActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.payment.HowToPayActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.payment.bank_transfer.BankTransferPayActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.payment.bank_transfer.BankTransferPayContActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.auth.signup.SuccessActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.auth.signup.EnterReferalCodeActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.auth.signup.EnterPasswordActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.auth.signup.EnterNameActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.auth.signup.EnterPhoneNumberActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.payment.virtual_account.VirtualAccountPayActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.payment.virtual_account.VirtualAccountPayContActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.coupon.transaction.CouponListActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.payment.ChoosePaymentActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.deposit.TopUpActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.auth.login.ConfirmPasswordActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.auth.login.CreatePasswordActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.auth.login.OtpActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.auth.login.LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.onboarding.OnBoardThree"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.onboarding.OnBoardTwo"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.onboarding.OnBoardOne"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.qdi.rajapay.home.MainActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.coupon.home.CouponHomeActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.qdi.rajapay.coupon.home.CouponDetailActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/five_x"
+    android:layout_marginBottom="@dimen/one_x" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:layout_marginVertical="@dimen/five_x"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/image_frame"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/one_x"
+            android:background="@drawable/rounded_shape_border"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:id="@+id/image"/>
+
+        </RelativeLayout>
+
+        <com.qdi.rajapay.utils.AutoResizeTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two_x"
+            android:textSize="10sp"
+            android:breakStrategy="high_quality"
+            android:gravity="center"
+            android:id="@+id/text"/>
+    </LinearLayout>
+</LinearLayout>

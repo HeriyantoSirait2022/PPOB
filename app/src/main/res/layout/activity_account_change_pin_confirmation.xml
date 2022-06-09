@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".print.PrintSavePDFActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar"
+            android:background="@drawable/rounded_toolbar"/>
+
+        <include layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/two_x"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/two_x"
+                android:textSize="@dimen/two_x"
+                android:textColor="@color/text"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/account_manage_account_change_pin_confirmation"
+                android:layout_marginBottom="@dimen/three_x"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/three_x"
+                android:layout_marginHorizontal="@dimen/two_x">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="6"
+                    android:id="@+id/pin"
+                    android:maxLength="6"
+                    android:hint="⚫⚫⚫⚫⚫⚫"
+                    android:textSize="18sp"
+                    android:letterSpacing="1.2"
+                    android:gravity="center"
+                    android:inputType="numberPassword"
+                    android:background="@null"
+                    android:layout_marginHorizontal="@dimen/one_x"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/two_x"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/submit"
+                    android:text="@string/next_label"/>
+
+                <com.qdi.rajapay.utils.NumberKeyboard
+                    android:id="@+id/number_keyboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

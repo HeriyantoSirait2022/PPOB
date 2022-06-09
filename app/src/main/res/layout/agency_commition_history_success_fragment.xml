@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/agency_commition_history_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_size"
+            android:layout_marginTop="@dimen/main_menu_container_offset"
+            android:layout_marginHorizontal="@dimen/two_x"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/agency_commition_history_success_total"/>
+
+        <TextView
+            android:id="@+id/total_commition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/two_x"
+            android:layout_marginTop="@dimen/two_x"
+            android:background="@color/white"
+            android:text="Rp.100"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="32sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/three_x"
+            android:layout_height="wrap_content"
+            android:id="@+id/list"/>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

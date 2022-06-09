@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/two_x"
+    android:id="@+id/card"
+    android:layout_marginVertical="@dimen/one_x">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/two_x">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title_size"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:id="@+id/title"/>
+            <!-- <code> -->
+            <ImageView
+                android:layout_width="@dimen/three_x"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:id="@+id/delete"
+                android:src="@drawable/ic_icon_trash_redhdpi"/>
+            <!-- </code> -->
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/one_x">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="@dimen/title_size"
+                android:id="@+id/price"/>
+            <!-- <code> -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/revised_price"
+                android:textColor="@color/colorPrimary"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+            <!-- </code> -->
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".home.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="85dp" >
+
+        <com.qdi.rajapay.utils.MovableFloatingActionButton
+            android:id="@+id/contact_cs"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/two_x"
+            android:src="@drawable/ic_customer_service"
+            android:layout_gravity="bottom|end"
+            app:useCompatPadding="true"
+            app:maxImageSize="80dp"
+            app:borderWidth="0dp"
+            android:backgroundTint="@android:color/transparent"
+            app:rippleColor="@null"
+            android:outlineProvider="none"
+            app:tint="@null"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:gravity="bottom"
+        android:background="@drawable/top_shadow_gradient"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_bg_rounded_corner"
+            android:layout_height="wrap_content">
+            <include
+                layout="@layout/main_menu_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/cashier"
+        app:layout_anchor="@id/bottom_menu"
+        app:layout_anchorGravity="center"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bg_circle_primary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/one_x"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_icon_kasir_whitehdpi"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/home_menu_cashier"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

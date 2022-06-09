@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/two_x">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_coupon_confirmation_title"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="@dimen/one_x"
+        android:background="@color/disabled"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:id="@+id/title"
+        android:text="@string/add_coupon_confirmation_detail"
+        android:textSize="14dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/two_x">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_coupon_confirmation_later"
+            android:layout_marginRight="@dimen/one_x"
+            android:id="@+id/cancel"
+            style="@style/Widget.MaterialComponents.Button.TextButton" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_coupon_confirmation_use"
+            android:layout_weight="1"
+            android:id="@+id/ok"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginRight="@dimen/one_x"/>
+    </LinearLayout>
+</LinearLayout>

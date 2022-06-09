@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/five_x"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:gravity="center|top">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/four_x"
+        android:textStyle="bold"
+        android:id="@+id/key"/>
+    <TextView
+        android:id="@+id/semicolon"
+        android:layout_width="0dp"
+        android:layout_weight="0.1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/titik_dua"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:id="@+id/value"/>
+</LinearLayout>

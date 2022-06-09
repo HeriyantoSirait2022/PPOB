@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_size">18dp</dimen>
+    <dimen name="rounded_size">20dp</dimen>
+    <dimen name="image_size">70dp</dimen>
+    <dimen name="atur_akun_size">65dp</dimen>
+    <dimen name="one_x">8dp</dimen>
+    <dimen name="two_x">16dp</dimen>
+    <dimen name="three_x">32dp</dimen>
+    <dimen name="four_x">14dp</dimen>
+    <dimen name="five_x">6dp</dimen>
+    <dimen name="six_x">12dp</dimen>
+    <dimen name="seven_x">10dp</dimen>
+    <dimen name="toolbar_title_size">20dp</dimen>
+    <dimen name="main_menu_container_offset">50dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="h1">25sp</dimen>
+    <dimen name="h2">20sp</dimen>
+    <dimen name="h3">18sp</dimen>
+    <dimen name="h4">14sp</dimen>
+    <dimen name="h5">12sp</dimen>
+    <dimen name="h5_alt1">13sp</dimen>
+    <dimen name="h6">10sp</dimen>
+
+    <!-- dialog -->
+    <dimen name="dialog_margin_bottom">10dp</dimen>
+
+    <!-- line -->
+    <dimen name="line_width">4dp</dimen>
+    <dimen name="line_height">80dp</dimen>
+
+    <!-- text seperator -->
+    <dimen name="text_seperator">5dp</dimen>
+
+    <!-- list item -->
+    <dimen name="list_item_padding_vertical">10dp</dimen>
+    <dimen name="list_item_margin_bottom_6dp">6dp</dimen>
+    <dimen name="list_item_margin_bottom_50dp">50dp</dimen>
+
+    <!-- image item -->
+    <dimen name="image_list_item_payment">22dp</dimen>
+    <dimen name="image_how_to_pay">24dp</dimen>
+    <dimen name="image_product_min">48dp</dimen>
+    <dimen name="image_coupon_detail_min">148dp</dimen>
+    <dimen name="image_product_closed_max">296dp</dimen>
+    <dimen name="image_icon_size">24dp</dimen>
+    <dimen name="image_icon_size_small">16dp</dimen>
+    <dimen name="image_icon_size_medium">64dp</dimen>
+    <dimen name="image_icon_background_medium">84dp</dimen>
+
+    <!-- Widget -->
+    <dimen name="widget_chat_button">36dp</dimen>
+    <dimen name="widget_icon_top_width">30dp</dimen>
+    <dimen name="widget_icon_top_height">30dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_24">24dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+
+    <!-- Margin -->
+    <dimen name="margin_18">18dp</dimen>
+
+</resources>

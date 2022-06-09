@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".coupon.transaction.CouponListActivity"
+    android:orientation="vertical"
+    android:background="@drawable/ic_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_layout"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:paddingTop="@dimen/one_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_onboard"
+            android:id="@+id/tabbar"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:tabTextColor="@color/text_2"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextAppearance="@style/coupon_list_tabwidget"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/view_pager"/>
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/one_x"
+                app:cardElevation="@dimen/one_x"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:paddingHorizontal="@dimen/two_x"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/h3"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:text="@string/coupon_have_coupon"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/use"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:text="@string/coupon_use_coupon"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

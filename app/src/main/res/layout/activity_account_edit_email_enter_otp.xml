@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".print.PrintSavePDFActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar"
+            android:background="@drawable/rounded_toolbar"/>
+        <include layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/two_x"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/two_x"
+                android:textSize="@dimen/two_x"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:text="@string/otp_title"
+                android:layout_marginBottom="@dimen/three_x"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/three_x"
+                android:layout_marginHorizontal="@dimen/two_x">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="6"
+                    android:id="@+id/pin"
+                    android:maxLength="6"
+                    android:hint="⚫⚫⚫⚫⚫⚫"
+                    android:textSize="18sp"
+                    android:letterSpacing="1.2"
+                    android:gravity="center"
+                    android:inputType="numberPassword"
+                    android:background="@null"
+                    android:layout_marginHorizontal="@dimen/one_x"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/two_x"
+                android:gravity="center"
+                android:textColor="@color/text"
+                android:textSize="@dimen/four_x"
+                android:textStyle="bold"
+                android:id="@+id/send_to"
+                android:text="@string/otp_subtitle_1"
+                android:layout_marginTop="@dimen/three_x"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/two_x"
+                android:layout_marginTop="@dimen/two_x"
+                android:id="@+id/resend"
+                android:textColor="@color/blue_completed"
+                style="@style/Widget.MaterialComponents.Button.TextButton"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/top_shadow_gradient"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/two_x"
+                android:id="@+id/submit"
+                android:text="@string/save_label"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
