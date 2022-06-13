@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="@dimen/one_x"
+    android:layout_marginVertical="@dimen/one_x"
+    android:background="?attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/padding_10"
+    android:padding="@dimen/one_x"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:minHeight="@dimen/image_point_min"
+        android:src="@color/grey_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="@dimen/h3"
+        android:text="@string/point_title"
+        android:layout_marginTop="@dimen/one_x"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="@dimen/h3"
+        android:text="@string/point_amount"
+        android:layout_marginTop="@dimen/one_x"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/point_description"
+        android:layout_marginTop="@dimen/one_x"
+        app:layout_constraintTop_toBottomOf="@+id/point"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
+        android:id="@+id/redeem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/one_x"
+        android:backgroundTint="@color/colorPrimary"
+        android:insetLeft="0dp"
+        android:insetRight="0dp"
+        android:text="@string/redeem"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        />
+    <Button
+        android:id="@+id/redeem_in_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/one_x"
+        android:backgroundTint="@color/blue_completed"
+        android:visibility="gone"
+        android:insetLeft="0dp"
+        android:insetRight="0dp"
+        android:text="@string/redeem_in_progress"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

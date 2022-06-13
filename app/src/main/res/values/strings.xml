@@ -8,6 +8,17 @@
     <string name="previous_label">Sebelumnya</string>
     <string name="skip_label">Lewati</string>
     <string name="balance_label">Saldo</string>
+    <string name="point_label">Poin</string>
+    <string name="reward_list">Daftar Hadiah</string>
+    <string name="reward_history">Reward History</string>
+    <string name="point_title">Nama Poin</string>
+    <string name="point_description">Kejar transaksimu hingga capai 2.000 poin. Raih bonus Rp. 100.000 di akun RajaPay kamu.</string>
+    <string name="redeem">Redeem</string>
+    <string name="redeem_in_progress">Diproses</string>
+    <string name="redeem_confirm_label">Apakah anda yakin untuk menukar poin anda dengan "#"?</string>
+    <string name="point_amount">2.000</string>
+    <string name="reward_empty_subtitle">Hadiah untuk penukaran poin belum tersedia.</string>
+    <string name="reward_history_empty_subtitle">Silahkan tukar poin anda dengan hadiah menarik kami</string>
     <string name="scan_label">Scan</string>
     <string name="top_up_1_label">Top Up</string>
     <string name="transfer_label">Transfer</string>
@@ -794,5 +805,7 @@
     <!-- <code> -->
     <string name="deposit_amount_empty">Nilai deposit anda kosong</string>
     <string name="deposit_amount_minimum">Minimum nilai deposit adalah Rp. 50.000</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- </code> -->
 </resources>

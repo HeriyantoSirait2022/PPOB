@@ -1,15 +1,15 @@
-# Project Payfazz - Redesign
+# Project Rajapay - Redesign
 
-Welcome to Payfazz Project by Qreatiq Digital LLC. 
+Welcome to Rajapay Project by Qreatiq Digital LLC.
 
 ## Getting Started
 
 This repository intended for Android development.
 ```
-Name        : Payfazz Redesign
+Name        : Rajapay Redesign
 Platform    : Android-apps
 WC Code     : N/A
-Project Code: 6Z4F2MPM 
+Project Code: 6Z4F2MPM
 Module      : Client Site
 ```
 
@@ -20,7 +20,7 @@ Module      : Client Site
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
- 
+
 ## Contributor
 
 * **Mr. Yohanes AI** - *GCP Engineer APAC / SEA OPS Manager* - [yohanim@google.com](mailto:yohanim@google.com)
@@ -29,11 +29,11 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * **Mrs. Erlina Chang** - *QA Engineer Lead SEA* - [erlina.chang@qreatiq.com](mailto:erlina.chang@qreatiq.com)
 * **Mrs. Shiying Yeap** - *Test Engineer Lead SEA* - [shiying.yeap@qreatiq.com](mailto:shiying.yeap@qreatiq.com)
 * **Mrs. Eunike Cherry** - *Sr. Developer Lvl 3 / Lead Engineer Alpha Team ID* - [eunike.cherry@qreatiq.com](mailto:eunike.cherry@qreatiq.com)
-* **Mrs. Evelyn Pacencia** - *Chief Designer Officer ID* - [evelyn.pacencia@qreatiq.com](mailto:evelyn.pacencia@qreatiq.com) 
-* **Mr. Ivan Kurniawan** - *System Analyst* - [ivan.kurniawan@foundry.qreatiq.com](mailto:ivan.kurniawan@foundry.qreatiq.com) 
-* **Mrs. Lydia Emanuella** - *Developer Lead* - [lydia.emanuella@qreatiq.co.id](mailto:lydia.emanuella@qreatiq.co.id) 
-* **Mrs. Yusi Nafthalia** - *Project Administrator* - [yusi.nafthalia@qreatiq.co.id](mailto:yusi.nafthalia@qreatiq.co.id) 
-  
+* **Mrs. Evelyn Pacencia** - *Chief Designer Officer ID* - [evelyn.pacencia@qreatiq.com](mailto:evelyn.pacencia@qreatiq.com)
+* **Mr. Ivan Kurniawan** - *System Analyst* - [ivan.kurniawan@foundry.qreatiq.com](mailto:ivan.kurniawan@foundry.qreatiq.com)
+* **Mrs. Lydia Emanuella** - *Developer Lead* - [lydia.emanuella@qreatiq.co.id](mailto:lydia.emanuella@qreatiq.co.id)
+* **Mrs. Yusi Nafthalia** - *Project Administrator* - [yusi.nafthalia@qreatiq.co.id](mailto:yusi.nafthalia@qreatiq.co.id)
+
 
 ## Acknowledgments
 

@@ -108,26 +108,65 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
+                                    android:orientation="vertical"
                                     android:gravity="center">
                                     <ImageView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
                                         android:src="@drawable/ic_account_balance_wallet_219653_24"/>
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginLeft="@dimen/one_x"
                                         android:textColor="#1B9152"
                                         android:textStyle="bold"
+                                        android:textAlignment="center"
                                         android:text="@string/balance_label"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="#1B9152"
+                                        android:textStyle="bold"
+                                        android:id="@+id/balance"
+                                        android:gravity="center"
+                                        android:text="Rp. 0"/>
                                 </LinearLayout>
-                                <TextView
-                                    android:layout_width="wrap_content"
+                                <LinearLayout
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:textColor="#1B9152"
-                                    android:textStyle="bold"
-                                    android:id="@+id/balance"
-                                    android:text="Rp. 0"/>
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:id="@+id/point"
+                                    android:gravity="center">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id='@+id/point_image'
+                                        android:src="@drawable/ic_account_point_gift_219653_24"/>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="#1B9152"
+                                        android:textStyle="bold"
+                                        android:textAlignment="center"
+                                        android:id="@+id/point_label"
+                                        android:text="@string/point_label"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="#1B9152"
+                                        android:textStyle="bold"
+                                        android:id="@+id/point_amount"
+                                        android:gravity="center"
+                                        android:text="+ 0"/>
+                                </LinearLayout>
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:textColor="#1B9152"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:id="@+id/balance"-->
+<!--                                    android:text="Rp. 0"/>-->
                             </LinearLayout>
                             <View
                                 android:layout_width="match_parent"

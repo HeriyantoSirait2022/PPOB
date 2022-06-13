@@ -26,6 +26,11 @@ public class APICallback {
         void onListResponseSuccess(List<T> list, String message);
     }
 
+    public interface ItemMultipleListCallback<T1, T2> extends BaseAPICallback {
+
+        void onMulitpleListResponseSuccess(List<T1> firstList, List<T2> secondList, String message);
+    }
+
     public interface PagingCallback<T> extends BaseAPICallback {
 
         void onListResponseSuccess(List<T> list, boolean isLastPage, String message);
