@@ -10,10 +10,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.qdi.rajapay.R;
+import com.qdi.rajapay.utils.NumberUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.MessageFormat;
 import java.util.ArrayList;
 
 public class PrepaidDataInputPhoneNoAdapter extends RecyclerView.Adapter<PrepaidDataInputPhoneNoAdapter.MyViewHolder> {
@@ -30,11 +32,12 @@ public class PrepaidDataInputPhoneNoAdapter extends RecyclerView.Adapter<Prepaid
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView status,first_char,rest_char,detail;
+        public TextView point, status,first_char,rest_char,detail;
 
         public MyViewHolder(View view, int i) {
             super(view);
 
+            point = view.findViewById(R.id.point);
             status = view.findViewById(R.id.status);
             first_char = view.findViewById(R.id.first_char);
             rest_char = view.findViewById(R.id.rest_char);
@@ -65,6 +68,18 @@ public class PrepaidDataInputPhoneNoAdapter extends RecyclerView.Adapter<Prepaid
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
         JSONObject data = arr.get(i);
         try {
+            myViewHolder.point.setVisibility(View.GONE);
+
+            int p = 0;
+            if(data.getInt("point") > 0){
+                p = data.getInt("point");
+                if(p>0){
+                    myViewHolder.point.setVisibility(View.VISIBLE);
+                }
+            }
+
+            myViewHolder.point.setText(MessageFormat.format("+ {0}", NumberUtils.format(p))+ " poin");
+
             String price_str = data.getString("price_display");
             String[] split = price_str.split("\\.");
             String first_char = "", rest_char = "";

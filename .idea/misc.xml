@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/point_reward_list_item.xml" value="0.11005434782608696" />
+        <entry key="app/src/main/res/layout/activity_main_menu_prepaid_data_input_phone_no.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_order_detail.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/main_menu_prepaid_data_input_phone_no_item.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/order_transaction_fragment.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/point_reward_list_item.xml" value="0.25" />
       </map>
     </option>
   </component>
