@@ -13,8 +13,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.qdi.rajapay.R;
 import com.qdi.rajapay.model.RewardData;
+import com.qdi.rajapay.utils.NumberUtils;
 import com.squareup.picasso.Picasso;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 
 public class PointRewardAdapter extends RecyclerView.Adapter<PointRewardAdapter.MyViewHolder> {
@@ -69,7 +73,12 @@ public class PointRewardAdapter extends RecyclerView.Adapter<PointRewardAdapter.
     public void onBindViewHolder(@NonNull PointRewardAdapter.MyViewHolder myViewHolder, final int i) {
         RewardData data = arr.get(i);
         myViewHolder.title.setText(data.name);
-        myViewHolder.point.setText(data.point);
+        int p = 0;
+        if(data.point > 0){
+            p = data.point;
+        }
+
+        myViewHolder.point.setText(MessageFormat.format("{0}", NumberUtils.format(p))+ " poin");
         myViewHolder.description.setText(data.description);
         if(!data.image.isEmpty()) {
             Picasso.get()
