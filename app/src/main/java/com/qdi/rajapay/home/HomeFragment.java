@@ -52,6 +52,7 @@ import com.qdi.rajapay.main_menu.prepaid_data.PrepaidDataInputPhoneNoActivity;
 import com.qdi.rajapay.main_menu.prepaid_mobile_credit.PrepaidMobileCreditInputPhoneNoActivity;
 import com.qdi.rajapay.main_menu.tv.TvChooseProviderActivity;
 import com.qdi.rajapay.main_menu.water.WaterChooseAreaActivity;
+import com.qdi.rajapay.point.PointIndexActivity;
 import com.qdi.rajapay.utils.FirebaseInstanceService;
 import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;
 
@@ -60,6 +61,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -72,10 +74,10 @@ import java.util.TimerTask;
  */
 public class HomeFragment extends Fragment {
     RecyclerView list;
-    LinearLayout top_up, scan, transfer, agent_target;
-    ImageView notification, contact_us;
+    LinearLayout top_up, scan, transfer, agent_target, point;
+    ImageView notification, contact_us, point_image;
     ViewPager banner;
-    TextView balance, name, phone, target_this_month;
+    TextView balance, point_amount, name, phone, target_this_month;
     DotsIndicator banner_indicator;
 
     MainAdapter adapter;
@@ -150,6 +152,13 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        point.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(parent, PointIndexActivity.class));
+            }
+        });
+
         scan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -188,6 +197,9 @@ public class HomeFragment extends Fragment {
         banner_indicator = view.findViewById(R.id.banner_indicator);
         banner = view.findViewById(R.id.banner);
         balance = view.findViewById(R.id.balance);
+        point = view.findViewById(R.id.point);
+        point_image = view.findViewById(R.id.point_image);
+        point_amount = view.findViewById(R.id.point_amount);
         name = view.findViewById(R.id.name);
         phone = view.findViewById(R.id.phone);
         target_this_month = view.findViewById(R.id.target_this_month);
@@ -311,9 +323,11 @@ public class HomeFragment extends Fragment {
                     JSONObject response_data = response.getJSONObject("response");
                     if (!response_data.getString("type").equals("Failed")) {
                         parent.user_edit_SP.putFloat("balance_deposit", (float) response_data.getDouble("deposit"));
+                        parent.user_edit_SP.putInt("balance_point",  response_data.getInt("point"));
                         parent.user_edit_SP.commit();
 
-                        balance.setText("Rp. "+parent.formatter.format(response_data.getDouble("deposit")));
+                        balance.setText(MessageFormat.format("Rp. {0}", parent.formatter.format(response_data.getDouble("deposit"))));
+                        point_amount.setText(MessageFormat.format("+ {0}", parent.formatter.format(response_data.getInt("point"))));
                     } else {
                         parent.show_error_message(parent.layout,response_data.getString("message"));
                     }

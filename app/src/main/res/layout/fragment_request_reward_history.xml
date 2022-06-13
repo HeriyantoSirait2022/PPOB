@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".point.RequestRewardHistoryFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/point_reward_list_item"
+        android:layout_marginBottom="@dimen/three_x"
+        android:visibility="visible"
+        android:id="@+id/list"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/three_x"
+        android:id="@+id/no_data_layout"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_coupon_detail_min"
+            android:layout_marginTop="@dimen/two_x"
+            android:src="@drawable/ic_illustrasi_kode_kuponhdpi"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agency_commition_history_empty_title"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/two_x"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reward_history_empty_subtitle"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/two_x"/>
+    </LinearLayout>
+
+</FrameLayout>

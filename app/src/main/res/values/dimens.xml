@@ -48,6 +48,7 @@
     <dimen name="image_icon_size_small">16dp</dimen>
     <dimen name="image_icon_size_medium">64dp</dimen>
     <dimen name="image_icon_background_medium">84dp</dimen>
+    <dimen name="image_point_min">36dp</dimen>
 
     <!-- Widget -->
     <dimen name="widget_chat_button">36dp</dimen>
